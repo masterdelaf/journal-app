@@ -5,7 +5,7 @@ import { Alert, Button, Grid, Link, TextField, Typography } from "@mui/material"
 import { Google } from "@mui/icons-material"
 import { AuthLayout } from '../layout/AuthLayout'
 import { useForm } from '../../hooks'
-import { startLoginWithEmailPassword, startGoogleSignIn } from '../thunk'
+import { startLoginWithEmailPassword, startGoogleSignIn } from '../../store/auth'
 
 const formData = {
   email: '',

@@ -1,5 +1,5 @@
-import { loginWithEmailPassword, logoutFirebase, registerUserWithEmailPassword, singInWithGoogle } from '../firebase/providers'
-import { checkingCredentials, logout, login } from './'
+import { loginWithEmailPassword, logoutFirebase, registerUserWithEmailPassword, singInWithGoogle } from '../../firebase/providers'
+import { checkingCredentials, logout, login } from '../auth'
 
 export const checkingAuthentication = ( email , password ) => {
     return async( dispatch )=>{

@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux"
 import { MenuOutlined, LogoutOutlined } from "@mui/icons-material"
 import { AppBar, Grid, IconButton, Toolbar, Typography } from "@mui/material"
-import { startLogout } from "../../auth"
+import { startLogout } from "../../store/auth"
 
 
 export const NavBar = ({ drawerWidth = 240 }) => {
