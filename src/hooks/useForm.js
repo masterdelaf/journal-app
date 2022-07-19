@@ -9,6 +9,12 @@ export const useForm = ( initialForm = {} , formValidations = {}) => {
         createValidators()
     }, [ formState ])
 
+    // Si el formulario inicial cambia entonces vuelve a llamarse este useform
+    useEffect(() => {
+        setFormState( initialForm )      
+    }, [initialForm])
+    
+
     // Recorre las propiedades del objeto y si tiene mensaje es que hay error, por lo qe retorna false
     const isFormValid = useMemo( () => {
         for (const formValue of Object.keys(formValidation)) {
